@@ -146,3 +146,40 @@ After completing this lab, you will:
 ✅ Structure projects for portability and collaboration
 
 These scripting and packaging skills are essential for building automation tools and working in modern Python development workflows.
+
+## Python Automation Lab
+
+### Description
+This project demonstrates how to create a log file and fetch sample data from a public API using Python.
+
+---
+
+### Files
+- `lib/generate_log.py` — function that writes a log file.  
+- `generate_log.py` — runs the log generator.  
+- `fetch_data.py` — fetches demo post from JSONPlaceholder API.  
+- `testing/test_generate_log.py` — pytest tests (all passed ).
+
+---
+
+### Run Tests
+```bash
+pytest -v
+```
+Expected result:
+5 passed
+
+### Run Scripts
+To generate a log file:
+```bash
+python generate_log.py
+```
+To fetch API data:
+```bash 
+python fetch_data.py
+```
+
+### Example Output
+Log written to log_20251017.txt
+File 'log_20251017.txt' successfully created!
+Fetched Post Title: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
